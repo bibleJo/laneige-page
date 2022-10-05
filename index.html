@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <title>라네즈, 내 피부 본연의 건강한 빛, 내 삶의 빛나는 자신감ㅣ라네즈 한국</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script>
+        $(document).ready(function(){
+            $('#slide_btbox>ul>li').click(function(){
+                $(this).css({'background-color':'transparent','border':'2px solid #000'}).siblings().css({'background-color':'rgba(0,0,0,0.4)','border':'none'})
+                $('#slide_imgbox').animate({'left':$(this).index()*-100+'%'})
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="logo"><img src="images/laneige-logo.svg" alt=""></h1>
+        <ul id="icon_menu">
+            <li><img src="images/icons/header-icon_1.png" alt=""></li>
+            <li><img src="images/icons/header-icon_2.png" alt=""></li>
+            <li><img src="images/icons/header-icon_3.png" alt=""></li>
+        </ul>
+        <ul id="menu">
+            <li>브랜드<div class="menu_line"></div></li>
+            <li>미츠 아트<div class="menu_line"></div></li>
+            <li>베스트 & 신상품<div class="menu_line"></div></li>
+            <li>스킨케어<div class="menu_line"></div></li>
+            <li>메이크업<div class="menu_line"></div></li>
+            <li>옴므<div class="menu_line"></div></li>
+            <li>이벤트<div class="menu_line"></div></li>
+        </ul>
+    </header>
+    <div id="slide">
+        <ul id="slide_imgbox">
+            <li>
+                <div class="slide_text">
+                    <h5>NEW</h5>
+                    <h2>ALL NEW 워터뱅크 블루 히알루로닉</h2>
+                    <h4>1/2000 사이즈의 초소형 블루 히알루론산이<br>피부 깊은 곳부터. 빈틈없이. 건강한 피부로<br>풀 리페어 보습</h4>
+                </div>
+            </li>
+            <li>
+                <div class="slide_text">
+                    <h5>NEW</h5>
+                    <h2>래디언-C 어드밴스드 이펙터</h2>
+                    <h4>매일 매일 환해지는 피부를 위한 첫단계 스킨케어</h4>
+                    <p>#브라이트닝 부스팅 에센스</p>
+                </div>
+            </li>
+            <li>
+                <div class="slide_text">
+                    <h2>래디언-C 크림</h2>
+                    <h4>초강력 톤업부스터의 힘으로 피부 코어부터<br>맑아지는 비타민 크림</h4>
+                    <p>#톤업부스터#빛톤피부</p>
+                </div>
+            </li>
+            <li>
+                <div class="slide_text">
+                    <h5>NEW</h5>
+                    <h2>피토베타인 수부지<br>컨트롤 앰플</h2>
+                    <h4>피부에 꼭 필요한 보습을 채워주어 유수분밸런스를 맞춰주는 앰플</h4>
+                    <p>#이유치유앰플 #수부지컨트롤</p>
+                </div>
+            </li>
+            <li>
+                <div class="slide_text">
+                    <h2>립 트리트먼트 밤</h2>
+                    <h4>진주빛 펄과 고효능 성분이 화사한 볼륨업 입술로 연출해주는 데일리 립 밤</h4>
+                    <p>#진주빛립밤 #3단립케어</p>
+                </div>
+            </li>
+        </ul>
+        <div id="slide_btbox">
+            <img src="images/icons/slide_prev_btn.png" alt="" id="slide_prev_btn">
+            <img src="images/icons/slide_pause_btn.png" alt="" id="slide_pause_btn">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <img src="images/icons/slide_next_btn.png" alt="" id="slide_next_btn">
+        </div>
+    </div>
+    <!--  -->
+    <div id="best">
+        <video src="images/bestseller-bg.mp4" id="best_bg"autoplay loop muted></video>
+        <div id="best_product">
+            <div id="best_product_bg1"></div>
+            <div id="best_product_bg2"></div>
+            <div id="best_product_box">
+                <h2>BEST SELLER</h2>
+                <ul>
+                    <li>
+                        <img src="images/best_seller1.png" alt="" class="best_product">
+                        <h4>CREAM SKIN REFINER</h4>
+                        <h5>크림 스킨</h5>
+                        <img src="images/icons/best_icon.png" alt="" class="best_icon">
+                        <p>스킨인데 뛰어난 보습지속력과, 산뜻한<br>사용감으로 이만한 스킨은 없는 것<br>같아요</p>
+                        <h6>@rabb********</h6>
+                    </li>
+                    <li>
+                        <img src="images/best_seller2.png" alt="" class="best_product">
+                        <h4>NEO CUSHION</h4>
+                        <h5>네오 쿠션</h5>
+                        <img src="images/icons/best_icon.png" alt="" class="best_icon">
+                        <p>마스크때문에 매트한 쿠션 샀는데 지금까지 썼던<br>쿠션 중에 제일 마무리감이 좋았어요.</p>
+                        <h6>@euns******</h6>
+                    </li>
+                    <li>
+                        <img src="images/best_seller3.png" alt="" class="best_product">
+                        <h4>RADIAN-C CREAM</h4>
+                        <h3>래디언-C 크림</h3>
+                        <img src="images/icons/best_icon.png" alt="" class="best_icon">
+                        <p>벌써 3통째에요! 기미가 고민인 요즘 사용하면<br>피부가 밝아지고 확실히 잡티가 옅어지네요~</p>
+                        <h6>@enji****</h6>
+                    </li>
+                </ul>
+                <img src="images/icons/prev-bt.png" alt="" id="best_prev_btn">
+                <img src="images/icons/next-bt.png" alt="" id="best_next_btn">
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="banner">
+        <ul>
+            <li>
+                <img src="images/banner1_1.jpg" alt="">
+                <h3>FEEL the GLOW</h3>
+                <p>내 피부 본연의 건강한 빛, 내 삶의 빛나는 자신감</p>
+                <div class="banner_rotate">BRAND STORY</div>
+            </li>
+            <li>
+                <img src="images/banner1_2.jpg" alt="">
+                <h3>래디언-C 크림</h3>
+                <p>초강력 톤업부스터의 힘으로 피부 코어부터<br>맑아지는 비타민 크림</p>
+                <div class="banner_rotate">BEST SELLER</div>
+            </li>
+            <li>
+                <img src="images/banner1_3.png" alt="">
+                <h3><내가 크리에이터라면?> 참여하기</h3>
+                <p>라이프스타일로 알아보는 크리에이터 유형 테스트</p>
+                <div class="banner_rotate">LIFESTYLE TEST</div>
+            </li>
+        </ul>
+    </div>
+    <!--  -->
+    <div id="banner2">
+        <div id="banner2_box1">
+            <img src="images/banner2_1.jpg" alt="">
+            <h3>뷰티 & 라이프 LAB</h3>
+            <p>[연구 #7] 지금 스마트폰으로 이 리포트를 읽고 있는 당신, 주목하라</p>
+            <div class="banner2_rotate">NEW ARRIVALS</div>
+        </div>
+        <div id="banner2_box2">
+            <img src="images/banner2_2.jpg" alt="">
+            <h3>명동 쇼룸</h3>
+            <p>편안하게 제품을 체험하고 브랜드를 경험할 수 있는<br>라네즈 브랜드 공간</p>
+            <div class="banner2_rotate">FLAGSHIP STORE</div>
+        </div>
+        <div id="banner2_box3">
+            <img src="images/banner2_3.jpg" alt="">
+            <h3>네오 쿠션</h3>
+            <p>함부로 묻지 않게, 네오로 밀착</p>
+            <div class="banner2_rotate">BEST SELLER</div>
+        </div>
+        <div id="banner2_box4">
+            <img src="images/banner2_4.jpg" alt="">
+            <h3>네오 파운데이션</h3>
+            <p>얇고 촘촘한 구름결 커버</p>
+            <div class="banner2_rotate">NEW ARRIVALS</div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="sns">
+        <h2><span>#</span>GLOW LIVE</h2>
+        <h4>SHARE YOUR GLOW MOMENTS WITH LANEIGE!</h4>
+        <ul>
+            <li><img src="images/sns_1.jpg" alt="" class="sns_img">
+                <img src="images/icons/cart.png" alt="" class="sns_cart">
+                <div class="sns_hover_box">
+                    <h5>@miittocador</h5>
+                    <p>buenos días! <img src="images/flower.jpg" alt=""> tal como me des</p>
+                </div>
+            </li>
+            <li><img src="images/sns_2.jpg" alt="" class="sns_img">
+                <img src="images/icons/cart.png" alt="" class="sns_cart">
+                <div class="sns_hover_box">
+                    <h5>@miittocador</h5>
+                    <p>buenos días! <img src="images/flower.jpg" alt=""> tal como me desc</p>
+                </div>
+            </li>
+            <li><img src="images/sns_3.jpg" alt="" class="sns_img">
+                <img src="images/icons/cart.png" alt="" class="sns_cart">
+                <div class="sns_hover_box">
+                    <h5>@geungbee</h5>
+                    <p>#광고 로 만났지만 써보니 넘 좋아</p>
+                </div>
+            </li>
+            <li><img src="images/sns_4.jpg" alt="" class="sns_img">
+                <img src="images/icons/cart.png" alt="" class="sns_cart">
+                <div class="sns_hover_box">
+                    <h5>@geungbee</h5>
+                    <p>#광고 로 만났지만 써보니 넘 좋아서</p>
+                </div>
+            </li>
+            <li><img src="images/sns_5.jpg" alt="" class="sns_img">
+                <img src="images/icons/cart.png" alt="" class="sns_cart">
+                <div class="sns_hover_box">
+                    <h5>@aerabeautydiary</h5>
+                    <p>after years and years, the laneige</p>
+                </div>
+            </li>
+        </ul>
+        <img src="images/icons/next-bt.png" alt="" id="next_btn">
+        <button>View More</button>
+    </div>
+    <!--  -->
+    <footer>
+        <div id="footer1">
+            <div id="footer1_box">
+                <ul id="footer1_menu1">
+                    <li>회사소개</li>
+                    <li>서비스이용약관</li>
+                    <li>UGC 이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>영상정보처리방침</li>
+                    <li>뷰티포인트</li>
+                    <li>사이트맵</li>
+                    <li>공지사항</li>
+                </ul>
+                <ul id="footer1_menu2">
+                    <li><img src="images/icons/sns_instagram_renew.png" alt=""></li>
+                    <li><img src="images/icons/sns_facebook_renew.png" alt=""></li>
+                    <li><img src="images/icons/sns_youtube_renew.png" alt=""></li>
+                    <li><img src="images/icons/sns_tiktok_renew.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="footer2_left">
+                <ul id="footer2_text">
+                    <li>고객상담실 (수신자요금부담) 080-023-5454</li>
+                    <li>운영시간 : 월-금 09:00 ~ 18:00</li>
+                </ul>
+                <div id="footer2_left_line"></div>
+                <p><span>© AMOREPACIFIC</span> CORPORATION. ALL RIGHTS RESERVED.</p>
+                <img src="images/icons/wa-mark.png" alt="" id="footer2_left_img">
+            </div>
+            <div id="footer2_right"><select name="" id="">
+                <option value="">한국/한국어</option>
+                <option value="">INTERNATIONAL/ENGLISH</option>
+                <option value="">中国大陆/中文</option>
+                <option value="">SINGAPORE/ENGLISH</option>
+                <option value="">MALAYSIA/ENGLISH</option>
+                <option value="">ประเทศไทย/ไทย</option>
+                <option value="">VIỆT NAM/TIẾNG VIỆT</option>
+                <option value="">INDONESIA/BAHASA</option>
+                <option value="">INDONESIA</option>
+                <option value="">HONGKONG CHINA/ENGLISH</option>
+                <option value="">中國香港/繁體中文</option>
+                <option value="">CANADA/ENGLISH</option>
+                <option value="">UNITED STATES/ENGLISH</option>
+            </select></div>
+        </div>
+    </footer>
+</body>
+</html>

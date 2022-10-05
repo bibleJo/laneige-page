@@ -1,0 +1,541 @@
+/********** CDN **********/
+        @font-face {font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+        /********** common **********/
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Arita-dotum-Medium'
+            ;}
+
+        /********** header **********/
+        header {
+            width: 100%;
+            height: 59px;
+            border-bottom: 1px solid #dddddd;
+            position: relative;
+        }
+        #logo {
+            width: 130px;
+            height: 35px;
+            float: left;
+            margin-left: 55px;
+            margin-top: 12.5px;
+        }
+        #icon_menu {
+            width: 130px;
+            height: 25px;
+            float: right;
+            margin-right: 55px;
+            margin-top: 17.5px;
+        }
+        #icon_menu > li {
+            float: left;
+            margin-left: 20px;
+        }
+        #icon_menu > li:first-child {margin-left: 0;}
+
+        #menu {
+            width: 800px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            text-align: center;
+        }
+        #menu > li {
+            display: inline-block;
+            margin:0 15px;
+            font-size: 18px;
+            position: relative;
+            cursor: pointer;
+        }
+        #menu > li > .menu_line {
+            width: 0;
+            height: 3px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transition: 0.3s;
+        }
+        #menu > li:hover > .menu_line {
+            margin: auto;
+            width: 100%;
+        }
+        /********** slide **********/
+        #slide {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        #slide_imgbox {
+            width: 500%;
+            height: 600px;
+            position: absolute;
+        }
+        #slide_imgbox> li {
+            width: 20%;
+            height: 600px;
+            float: left;
+            position: relative;
+        }
+        #slide_imgbox> li:nth-child(1) {background: url(../images/slide1.png)center no-repeat;}
+        #slide_imgbox> li:nth-child(2) {background: url(../images/slide2.jpg)center no-repeat;}
+        #slide_imgbox> li:nth-child(3) {background: url(../images/slide3.jpg)center no-repeat;}
+        #slide_imgbox> li:nth-child(4) {background: url(../images/slide4.jpg)center no-repeat;}
+        #slide_imgbox> li:nth-child(5) {background: url(../images/slide5.jpg)center no-repeat;}
+
+        .slide_text {
+            width: 700px;
+            height: 220px;
+            position: absolute;
+            left: 20%;
+            top: 190px;
+            padding: 6px;
+        }
+        .slide_text > h5 {
+            width: 40px;
+            height: 20px;
+            background-color: #4577be;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 100;
+            text-align: center;
+            line-height: 20px;
+        }
+        .slide_text > h2 {
+            font-size: 45px;
+            font-weight: 400;
+        }
+        .slide_text > h4 {
+            font-size: 21px;
+            font-weight: 100;
+            margin-top: 20px;
+        }
+        .slide_text > p {margin-top: 5px;}
+        #slide_btbox {
+            width: 300px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 20px;
+            line-height: 50px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #slide_btbox > img {vertical-align: middle;}
+
+        #slide_btbox > ul {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #slide_btbox > ul > li {
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background-color: rgba(0,0,0,0.4);
+            display: inline-block;
+            vertical-align: middle;
+            margin: 3px;
+        }
+        #slide_btbox > ul > li:nth-child(1) {
+            background-color: transparent;
+            border:2px solid #000;
+        }
+        #slide_btbox > ul > li:hover {background-color: #000;}
+
+        /********** best seller **********/
+        #best {
+            width: 100%;
+            height: 900px;
+            position: relative;
+            overflow: hidden;
+        }
+        #best_product {
+            width: 100%;
+            height: 900px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #best_product_bg1 {
+            width: 100%;
+            height: 460px;
+        }
+        #best_product_bg2 {
+            width: 100%;
+            height: 440px;
+            background-color:#fff;
+        }
+        #best_product_box {
+            width: 1200px;
+            height: 800px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 60px;
+            text-align: center;}
+        #best_product_box > h2 {
+            line-height: 100px;
+            font-size: 40px;
+            letter-spacing: 4px;
+        }
+        #best_product_box > ul > li {
+            width: 326px;
+            height: 606px;
+            margin: 37px;
+            float: left;
+        }
+        .best_product {width: 100%;}
+
+        #best_product_box > ul > li > h4 {
+            color: #4477be;
+            font-size: 17px;
+            font-weight: 100;
+        }
+        #best_product_box > ul > li > h5 {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 100;
+        }
+        .best_icon {margin-top: 20px;}
+
+        #best_product_box > ul > li > p {
+            margin-top: 10px;
+            font-weight: 100;
+            font-size: 16px;
+        }
+        #best_product_box > ul > li > h6 {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 100;
+            color: #898989;
+        }
+        #best_prev_btn {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: -50px;
+        }
+        #best_next_btn {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: -50px;
+        }
+
+        /********** banner 1 **********/
+        #banner {
+            width: 1200px;
+            height: 650px;
+            margin: auto;
+            margin-top: 150px;
+        }
+        #banner > ul > li {
+            width: 314px;
+            height: 640px;
+            margin-left: 66px;
+            margin-right: 20px;
+            margin-top: 5px;
+            float: left;
+            position: relative;
+        }
+        #banner > ul > li > img {width: 100%;}
+
+        #banner > ul > li > h3 {
+            margin-top: 5px;
+            font-weight: 100;
+        }
+        #banner > ul > li > p {
+            margin-top: 5px;
+            font-weight: 100;
+            font-size: 15px;
+        }
+        .banner_rotate {
+            width: 300px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            left: -175px;
+            top: 120px;
+            color: #4577be;
+            transform: rotate(-90deg);
+            text-align: right;
+        }
+
+        /********** banner 2 **********/
+        #banner2 {
+            width: 1200px;
+            height: 1600px;
+            margin: auto;
+            margin-top: 80px;
+            position: relative;
+        }
+        #banner2_box1 {
+            width: 664px;
+            height: 540px;
+            position: absolute;
+            left:60px;
+            top: 85px;
+        }
+        #banner2_box2 {
+            width: 367px;
+            height: 725px;
+            position: absolute;
+            right:10px;
+            top: 130px;
+        }
+        #banner2_box3 {
+            width: 368px;
+            height: 705px;
+            position: absolute;
+            left: 60px;
+            bottom: 170px;
+        }
+        #banner2_box4 {
+            width: 664px;
+            height: 540px;
+            position: absolute;
+            right: 10px;
+            bottom: 30px;
+        }
+        #banner2 >div > img {width: 100%;}
+
+        #banner2 >div > h3 {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 100;
+        }
+        #banner2 >div > p{
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 100;
+            color: #808286;
+        }
+        .banner2_rotate {
+            width: 300px;
+            height: 60px;
+            line-height: 60px;
+            letter-spacing: 1px;
+            position: absolute;
+            left: -175px;
+            top: 120px;
+            text-align: right;
+            transform: rotate(-90deg);
+            color: #6791cc;
+        }
+
+        /********** glow live **********/
+        #sns {
+            width: 1200px;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+        #sns > h2 {
+            margin-top: 80px;
+            font-size: 42px;
+            letter-spacing: 5px;
+        }
+        #sns > h4 {
+            margin-top: 10px;
+            color: #5f5f5f;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+        #sns > ul {
+            width: 1050px;
+            height: 210px;
+            margin: 20px auto;
+        }
+        #sns > ul > li {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            background-color: #ddd;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+        #sns > ul > li:hover > .sns_img {
+            top: -10px;
+            cursor: pointer;
+        }
+        #sns > button {
+            width: 115px;
+            height: 32px;
+            border:1px solid #000;
+            background: transparent;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+        #sns > button:hover {
+            cursor: pointer;
+            background-color: #4577be;
+            color: #fff;
+            border-color: #4577be;
+        }
+        .sns_img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+        }
+        .sns_cart {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+        .sns_hover_box {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            bottom: -60px;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+        #sns > ul > li:hover > .sns_hover_box {
+            bottom: 0;
+            cursor: pointer;
+        }
+        .sns_hover_box > h5 {margin-top: 10px;}
+        .sns_hover_box > p {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 13px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .sns_hover_box > p > img {vertical-align: middle;}
+
+        #next_btn {
+            position: absolute;
+            right: 40px;
+            top: 200px;
+        }
+        #next_btn:hover {
+            border-radius: 5px;
+            background-color: #eee;
+        }
+
+        /********** footer **********/
+        footer {
+            width: 100%;
+            height: 250px;
+            margin-top: 100px;
+        }
+        #footer1 {
+            width: 100%;
+            height: 46px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        #footer1_box {
+            width: 1200px;
+            height: 25px;
+            line-height: 25px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        #footer1_menu1 {
+            width: 1000px;
+            height: 25px;
+            float: left;
+        }
+        #footer1_menu1 > li {
+            float: left;
+            margin: 0 10px;
+            margin-right: 31px;
+            font-size: 15px;
+        }
+        #footer1_menu1 > li:last-child {margin-right: 0;}
+
+        #footer1_menu2 {
+            width: 170px;
+            height: 25px;
+            float: right;
+        }
+        #footer1_menu2 > li {
+            float: left;
+            margin-right: 20px;
+        }
+        #footer1_menu2 > li:last-child {margin-right: 0;}
+
+        #footer2 {
+            width: 1200px;
+            height: 200px;
+            margin: auto;
+        }
+        #footer2_left {
+            width: 620px;
+            height: 120px;
+            margin-top: 10px;
+            float: left;
+            padding: 10px;
+            position: relative;
+        }
+        #footer2_text > li {
+            float: left;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        #footer2_text > li:first-child::after {
+            content: '|';
+            margin: 0 7px;
+            color: #ddd;
+        }
+        #footer2_left > p {
+            clear: both;
+            font-size: 15px;
+            margin-top: 70px;
+            letter-spacing: 1px;
+        }
+        #footer2_left > p > span {font-weight: 900;}
+
+        #footer2_left_line {
+            width: 1px;
+            height: 44px;
+            background-color:#ddd;
+            float: left;
+            margin-left: 20px;
+        }
+        #footer2_left_img {
+            width: 75px;
+            height: 50px;
+            position: absolute;
+            right: 45px;
+            top: 8px;
+        }
+        #footer2_right {
+            width: 260px;
+            height: 40px;
+            margin-top: 20px;
+            float: right;
+            background-color: blue;
+            margin-right:10px;
+        }
+        #footer2_right > select {
+            width: 260px;
+            height: 40px;
+            font-size: 15px;
+            padding-left: 5px;
+        }
